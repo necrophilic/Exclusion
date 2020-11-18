@@ -7,6 +7,7 @@ white = "\x1b[1;37m"
 yellow = "\x1b[1;33m"
 blue = "\x1b[1;34m"
 cyan = "\x1b[1;36m"
+green = "\x1b[1;32m"
 
 Azula("cd IPHM/ && wget -q https://raw.githubusercontent.com/necrophilic/Exclusion/main/AMP/methods/layer4/v1/reflection/ldap/ldap.c -O ldap.c; gcc -o ldap -w ldap.c -pthread; cd")
 Azula("cd IPHM/ && wget -q https://raw.githubusercontent.com/necrophilic/Exclusion/main/AMP/methods/layer4/v1/reflection/ssdp/ssdp.c -O ssdp.c; gcc -o ssdp -w ssdp.c -pthread; cd")
@@ -16,4 +17,4 @@ Azula("cd IPHM/ && wget -q https://raw.githubusercontent.com/necrophilic/Exclusi
 Azula("cd IPHM/ && wget -q https://raw.githubusercontent.com/necrophilic/Exclusion/main/AMP/methods/layer4/v1/reflection/dns/dns.c -O dns.c; gcc -o dns -w dns.c -pthread; cd")
 Azula("cd IPHM/ && chmod 777 * && cd")
 Azula("cd IPHM/ && rm -rf ldap.c ssdp.c wsd.c mssql.c dns.c && cd")
-print(""+ white +"["+ yellow +"Console"+ white +"] - ["+ blue +"Event"+ white +"] - ["+ cyan +"All Scripts Downloaded"+ white +"]\n")
+print(""+ white +"["+ yellow +"Console"+ white +"] - ["+ blue +"Event"+ white +"] - ["+green+"IPSP"white"/"+ cyan +"All Scripts Downloaded"+ white +"]\n")
